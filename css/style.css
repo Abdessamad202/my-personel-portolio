@@ -159,7 +159,7 @@ body {
 }
 
 .btn-custom {
-  background-color: #9333ea;
+  background-color: var(--active-hover-color);
   border: none;
   padding: 12px 40px;
   border-radius: 30px;
@@ -167,7 +167,7 @@ body {
 }
 
 .btn-custom:hover {
-  background-color: #a855f7;
+  background-color: var(--active-hover-color);
 }
 
 .text-custom-gray {
@@ -220,7 +220,7 @@ body {
 }
 
 .about__me h1 span{
-  color: #9333ea;
+  color: var(--active-hover-color);
 }
 
 .about__me p{
@@ -259,4 +259,57 @@ body {
   .about__me .stats .stat h2 {
     font-size: 40px;
   }
+}
+/* Button Section Styling */
+.button-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  background: #8e2de2;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(142, 45, 226, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #4a00e0;
+  box-shadow: 0 6px 16px rgba(74, 0, 224, 0.3);
+}
+
+/* Secondary Link Styling */
+.link-secondary {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-secondary:hover {
+  color: #8e2de2;
+}
+
+/* Arrow Animation for Link */
+.link-secondary::after {
+  content: "→";
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.link-secondary:hover::after {
+  transform: translateX(5px);
+}
+a{
+  text-decoration: none !important;
 }
