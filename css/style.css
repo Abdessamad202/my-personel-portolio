@@ -366,7 +366,7 @@ a {
 }
 
 /* tools styling */
-.card {
+.tools_content .card {
   background-color: #1e1e1e;
   border: none;
   border-radius: 12px;
@@ -375,25 +375,30 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-.card:hover{
+
+.tools_content .card:hover {
   background-color: #2e2e2e !important;
   transition: transform 0.3s ease-in-out !important;
 }
-.card img {
+
+.tools_content .card img {
   height: 50px;
   width: auto;
   margin-bottom: 15px;
   object-fit: contain;
 }
-.card h3 {
+
+.tools_content .card h3 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #e2e2e2;
 }
-.card p {
+
+.tools_content .card p {
   font-size: 14px;
   color: #a8a8a8;
 }
+
 
 /* form styling */
 .contact-form {
@@ -437,4 +442,54 @@ a {
 }
 .contact-form button:hover {
   background-color: #8a3fff;
+}
+/* template styling */
+.templates__content .col-lg-6{
+  padding: 15px ;
+}
+.templates__content .card {
+  background: #1e1e1e;
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.templates__content .card:hover {
+  transform: translateY(-5px);
+}
+
+.templates__content .preview-window {
+  height: 200px;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.templates__content .stabraq-bg {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+}
+
+.templates__content .najmai-bg {
+  background: linear-gradient(45deg, #7928ca, #ff0080);
+}
+
+.templates__content .taskai-bg {
+  background: linear-gradient(45deg, #1fa2ff, #12d8fa);
+}
+
+.templates__content .ruya-bg {
+  background: linear-gradient(45deg, #7928ca, #ff0080);
+}
+
+.templates__content .card-title {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.templates__content .card-subtitle {
+  color: #888;
+  font-size: 1rem;
 }
