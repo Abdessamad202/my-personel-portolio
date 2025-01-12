@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Navigation</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,9 +14,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
 </head>
 
-<body>
+<body class="">
     <div class="nav-container ">
         <div class="nav-item active">
             <i class="fas fa-home"></i>
@@ -39,63 +42,196 @@
             <div class="tooltip">Contact</div>
         </div>
     </div>
-    <div class="container mt-100 mb-4">
-        <div class="profile-card p-4 mx-auto">
-            <div class="text-center">
-                <img src="./assets/profile.jpg" alt="Profile" class="profile-img mb-4">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-4 fixed cln mt-50">
+                <div class="text-center profile-card">
+                    <img src="./assets/profile.jpg" alt="Profile" class="profile-img mb-4">
 
-                <h1 class="text-white fs-3 fw-bold mb-2">Abdessamad Kechchaf</h1>
-                <p class="text-custom-gray mb-1">Full Stack Developer</p>
-                <p class="text-custom-gray mb-4">Mohammedia, Morocco</p>
+                    <h1 class="text-white fs-3 fw-bold mb-2">Abdessamad Kechchaf</h1>
+                    <p class="text-custom-gray mb-1">Junior Full Stack Developer</p>
+                    <p class="text-custom-gray mb-4">Mohammedia, Morocco</p>
 
-                <div class="d-flex social-icons justify-content-center align-items-center ">
-                    <!-- Dribbble -->
-                    <svg class="social-icon" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm10 12c0 .74-.07 1.48-.21 2.17-.52-.11-2.79-.56-5.95-.78-.23-.6-.46-1.15-.72-1.69l-.03-.06c3.29-1.43 4.8-3.27 4.91-3.39c1.23 1.65 2 3.71 2 5.75zm-2.16-6.26c-.09.11-1.51 1.83-4.68 3.14-.79-1.46-1.67-2.7-1.81-2.89 1.37-.33 2.82-.51 4.32-.51 .77 0 1.51.07 2.23.21.01.01-.03.02-.06.05zM12 2c1.46 0 2.84.3 4.1.84-.03.04-.86 1.2-2.68 2.23-1.07-1.97-2.25-3.6-2.45-3.89C11.33 2.05 11.66 2 12 2zM9.27 1.84c.19.28 1.37 1.9 2.45 3.84-3.07 1.15-5.08 1.22-5.91 1.22-.24 0-.43-.01-.57-.02C6.01 4.39 7.48 2.71 9.27 1.84zM2 12c0-.93.13-1.83.36-2.68.2.01.48.02.81.02 1.08 0 3.47-.15 6.72-1.39.18.35.36.71.52 1.08-3.7 1.1-5.67 4.11-5.94 4.55C2.87 14.1 2 13.11 2 12zm3.89 4.38c.19-.34 1.98-3.15 5.77-4.31.95 2.47 1.34 4.55 1.44 5.15-.73.31-1.52.48-2.36.48-1.86 0-3.57-.63-4.85-1.32z" />
-                    </svg>
-                    <!-- Twitter -->
-                    <svg class="social-icon" viewBox="0 0 24 24">
-                        <path
-                            d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
-                    </svg>
-                    <!-- Instagram -->
-                    <svg class="social-icon" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                    </svg>
-                    <!-- Email -->
-                    <svg class="social-icon" viewBox="0 0 24 24">
-                        <path
-                            d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z" />
-                    </svg>
+                    <div class="d-flex social-icons justify-content-center align-items-center ">
+                        <!-- Dribbble -->
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm10 12c0 .74-.07 1.48-.21 2.17-.52-.11-2.79-.56-5.95-.78-.23-.6-.46-1.15-.72-1.69l-.03-.06c3.29-1.43 4.8-3.27 4.91-3.39c1.23 1.65 2 3.71 2 5.75zm-2.16-6.26c-.09.11-1.51 1.83-4.68 3.14-.79-1.46-1.67-2.7-1.81-2.89 1.37-.33 2.82-.51 4.32-.51 .77 0 1.51.07 2.23.21.01.01-.03.02-.06.05zM12 2c1.46 0 2.84.3 4.1.84-.03.04-.86 1.2-2.68 2.23-1.07-1.97-2.25-3.6-2.45-3.89C11.33 2.05 11.66 2 12 2zM9.27 1.84c.19.28 1.37 1.9 2.45 3.84-3.07 1.15-5.08 1.22-5.91 1.22-.24 0-.43-.01-.57-.02C6.01 4.39 7.48 2.71 9.27 1.84zM2 12c0-.93.13-1.83.36-2.68.2.01.48.02.81.02 1.08 0 3.47-.15 6.72-1.39.18.35.36.71.52 1.08-3.7 1.1-5.67 4.11-5.94 4.55C2.87 14.1 2 13.11 2 12zm3.89 4.38c.19-.34 1.98-3.15 5.77-4.31.95 2.47 1.34 4.55 1.44 5.15-.73.31-1.52.48-2.36.48-1.86 0-3.57-.63-4.85-1.32z" />
+                        </svg>
+                        <!-- Twitter -->
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+                        </svg>
+                        <!-- Instagram -->
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                        <!-- Email -->
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="content mt-lg-120 mt-100 mb-100">
-            <div class="about__me">
-                <h1>Building Innovative <span>Full Stack </span>Solutions</h1>
-                <p>Transforming Your Ideas into Reality With Modern Web Development Technologies</p>
-                <div class="stats">
-                    <div class="stat">
-                        <h2>2+</h2>
-                        <p>Projects</p>
-                        <p>Completed</p>
+            <div class="col-lg-8 absolute cln mt-100 mt-lg-120">
+                <div class="hero__content">
+                    <h1>Building Innovative <span>Full Stack </span>Solutions</h1>
+                    <p>Transforming Your Ideas into Reality With Modern Web Development Technologies</p>
+                    <!-- <div class="stats">
+                        <div class="stat">
+                            <h2>2+</h2>
+                            <p>Projects</p>
+                            <p>Completed</p>
+                        </div>
+
+                    </div> -->
+                    <div class="button-section">
+                        <a href="#contact" class="btn-primary">Let's Talk</a>
+                        <a href="#work" class="link-secondary">My Work</a>
                     </div>
 
                 </div>
-                <div class="button-section">
-                    <a href="#contact" class="btn-primary">Let's Talk</a>
-                    <a href="#work" class="link-secondary">My Work</a>
-                </div>
+                <div class="tools_content">
+                    <h1 class="header">My Developer Toolkit</h1>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/VSCode.png" alt="VS Code" class="img-fluid">
+                                <h3>VS Code</h3>
+                                <p>Code Editor</p>
+                            </div>
+                        </div>
 
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/HTML5.png" alt="HTML5">
+                                <h3>HTML5</h3>
+                                <p>Web Development</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/CSS3.png" alt="CSS3">
+                                <h3>CSS3</h3>
+                                <p>Styling</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/JavaScript.png" alt="JavaScript">
+                                <h3>JavaScript (ES6+)</h3>
+                                <p>Programming Language</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/PHP.png" alt="PHP" class="img-fluid">
+                                <h3>PHP</h3>
+                                <p>Scripting Language</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Bootstrap.png" alt="Bootstrap">
+                                <h3>Bootstrap</h3>
+                                <p>UI Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Tailwind.png" alt="Tailwind CSS">
+                                <h3>Tailwind CSS</h3>
+                                <p>Utility-First Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Node.js.png" alt="Node.js">
+                                <h3>Node.js</h3>
+                                <p>Backend Runtime</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/React.png" alt="React.js">
+                                <h3>React.js</h3>
+                                <p>Frontend Library</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Express.png" alt="Express.js">
+                                <h3>Express.js</h3>
+                                <p>Web Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Laravel.png" alt="Laravel">
+                                <h3>Laravel</h3>
+                                <p>Backend Framework</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/MySQL.png" alt="MySQL">
+                                <h3>MySQL</h3>
+                                <p>SQL Database</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/MongoDB.png" alt="MongoDB">
+                                <h3>MongoDB</h3>
+                                <p>NoSQL Database</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Git.png" alt="Git">
+                                <h3>Git</h3>
+                                <p>Version Control</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Docker.png" alt="Docker">
+                                <h3>Docker</h3>
+                                <p>Containerization</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/Jira.png" alt="Jira">
+                                <h3>Jira</h3>
+                                <p>Project Management</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card">
+                                <img src="assets/tools/SonarQube.png" alt="SonarQube" class="img-fluid">
+                                <h3>SonarQube</h3>
+                                <p>Code Quality & Security</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="about__me">
+                    <h1>About Me</h1>
+                    <p>Hi, I'm Abdessamad Kechchaf, a Junior Full Stack Developer based in Mohammedia, Morocco. I
+                        specialize in building innovative web applications using modern web development technologies. I
+                        have a passion for creating beautiful and functional websites that provide a great user
+                        experience.
+                    </p>
+                </div> -->
             </div>
         </div>
-
     </div>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
