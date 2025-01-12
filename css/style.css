@@ -451,12 +451,13 @@ a {
   background: #1e1e1e;
   border: none;
   border-radius: 1rem;
-  transition: transform 0.3s ease;
   height: 100%;
+  transition: transform 0.3s ease !important;
 }
 
 .templates__content .card:hover {
-  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  transform: translateY(-5px) !important ;
 }
 
 .templates__content .preview-window {
