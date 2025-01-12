@@ -14,13 +14,27 @@
   box-sizing: border-box;
   font-family: var(--font-family);
 }
-p{
+
+p {
   margin: 0;
 }
+
 body {
   background-color: var(--background-color);
 }
 
+/* Utility Classes */
+.mt-100 {
+  margin-top: 100px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+
+/* Navigation Styling */
 .nav-container {
   background-color: var(--nav-bg-color);
   border-radius: 10px;
@@ -29,9 +43,9 @@ body {
   gap: 20px;
   position: fixed;
   top: 20px;
-  z-index: 999;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 999;
   box-shadow: var(--box-shadow);
 }
 
@@ -68,71 +82,82 @@ body {
   border-radius: 5px;
   font-size: 12px;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive adjustments */
+/* Responsive Navigation Adjustments */
 @media (max-width: 768px) {
   .nav-container {
-      padding: 8px 16px;
-      gap: 15px;
+    padding: 8px 16px;
+    gap: 15px;
   }
 
   .nav-item {
-      width: 45px;
-      height: 45px;
-      font-size: 18px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
   }
 
   .tooltip {
-      font-size: 11px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 480px) {
   .nav-container {
-      padding: 6px 12px;
-      gap: 12px;
+    padding: 6px 12px;
+    gap: 12px;
   }
 
   .nav-item {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 
   .tooltip {
-      font-size: 10px;
+    font-size: 10px;
   }
 }
 
+/* Layout Styling */
+.cln {
+  padding: 15px;
+}
 
-/* profile styling  */
+@media (min-width: 1078px) {
+  .row {
+    position: relative;
+  }
+
+  .absolute {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 350px;
+  }
+
+  .col-lg-8 .div {
+    background-color: red;
+    min-width: 650px;
+    margin: auto;
+  }
+}
+
+/* Profile Styling */
 .profile-card {
-  width: 100%;
+  padding: 20px;
   position: relative;
   background-color: #232323;
   overflow: hidden;
   border-radius: 20px;
 }
 
-@media (min-width: 1079px) {
-  .profile-card {
-    width: 350px;
-    position: fixed;
-    margin-left:  10%;
-    top: 40px;
-    z-index:  -1;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
-  }
-  .content {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    margin-left: 0;
-  }
-}
 .profile-img {
   width: 100%;
   max-width: 280px;
@@ -146,6 +171,7 @@ body {
   gap: 20px;
   align-items: center;
 }
+
 .social-icon {
   width: 24px;
   height: 24px;
@@ -155,9 +181,10 @@ body {
 }
 
 .social-icon:hover {
-  fill: #a855f7;
+  fill: #fff;
 }
 
+/* Custom Button Styling */
 .btn-custom {
   background-color: var(--active-hover-color);
   border: none;
@@ -167,99 +194,78 @@ body {
 }
 
 .btn-custom:hover {
-  background-color: var(--active-hover-color);
+  background-color: #5e17c0;
 }
 
+/* Typography Styling */
 .text-custom-gray {
   color: #999;
 }
-.mt-100 {
-  margin-top: 100px;
-}
-.mb-100 {
-  margin-bottom: 100px;
-}
-@media (min-width: 991px) {
-  .mt-lg-120 {
-    margin-top: 120px;
-  }
 
-}
-
-@media (min-width: 1080px) {
-  .content{
-    position: fixed ;
-    height: 110vh;
-    top: 0;
-    max-width:  650px;
-    right: 0;
-    margin-right:  10%;
-  }
-
-}
-
-@media (max-width: 1199px) {
-  .content {
-    margin-right:  5%;
-  }
-}
-@media (min-width: 1199px) {
-  .content{
-    margin-right:  10%;
-  }
-}
-.about__me{
+/* About Me Section */
+.hero__content {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   gap: 20px;
 }
-.about__me h1{
+
+.hero__content h1 {
   font-size: 68px;
   color: #fff;
   font-weight: 600;
 }
 
-.about__me h1 span{
+.hero__content h1 span {
   color: var(--active-hover-color);
 }
 
-.about__me p{
+.hero__content p {
   color: #d9d9d9;
   font-size: 16px;
   text-transform: uppercase;
 }
-.about__me .stats{
+
+.hero__content .stats {
   display: flex;
   gap: 20px;
 }
-.about__me .stats .stat h2 {
+
+.hero__content .stats .stat h2 {
   font-size: 70px;
   color: #fff;
   font-weight: 600;
 }
+
+/* Responsive About Me Adjustments */
 @media (max-width: 1079px) {
-  .about__me {
+  .hero__content {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 }
+
 @media (max-width: 480px) {
-  .about__me {
+  .hero__content {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .about__me h1{
+
+  .hero__content h1 {
     font-size: 40px;
   }
-  .about__me p{
+
+  .hero__content p {
     font-size: 12px;
   }
-  .about__me .stats .stat h2 {
+
+  .hero__content .stats .stat h2 {
     font-size: 40px;
   }
 }
+
 /* Button Section Styling */
 .button-section {
   display: flex;
@@ -280,8 +286,9 @@ body {
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  background: #4a00e0;
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #7e22ce;
   box-shadow: 0 6px 16px rgba(74, 0, 224, 0.3);
 }
 
@@ -310,6 +317,44 @@ body {
 .link-secondary:hover::after {
   transform: translateX(5px);
 }
-a{
+
+a {
   text-decoration: none !important;
+}
+/* commun styling */
+.header {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 50px;
+}
+/* tools styling */
+.card {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: #2e2e2e;
+}
+.card img {
+  height: 50px;
+  width: auto;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #e2e2e2;
+}
+.card p {
+  font-size: 14px;
+  color: #a8a8a8;
 }
