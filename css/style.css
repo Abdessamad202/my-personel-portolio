@@ -22,7 +22,9 @@ p {
 body {
   background-color: var(--background-color);
 }
-
+.container {
+  overflow: hidden;
+}
 /* Utility Classes */
 .mt-100 {
   margin-top: 100px;
@@ -322,12 +324,39 @@ a {
   text-decoration: none !important;
 }
 /* commun styling */
+/* Default Styles for Desktop */
 .header {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
   margin-top: 50px;
 }
+
+/* Tablet (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    font-size: 40px;  /* Adjust font size for tablet */
+    margin-top: 40px;  /* Adjust margin */
+  }
+}
+
+/* Mobile (between 480px and 768px) */
+@media (max-width: 768px) {
+  .header {
+    text-align: center;  /* Center align text for mobile */
+    font-size: 30px;  /* Adjust font size for mobile */
+    margin-top: 30px;  /* Adjust margin */
+  }
+}
+
+/* Very Small Screens (less than 480px) */
+@media (max-width: 480px) {
+  .header {
+    font-size: 24px;  /* Smaller font size for very small screens */
+    margin-top: 20px;  /* Adjust margin */
+  }
+}
+
 /* tools styling */
 .card {
   background-color: #1e1e1e;
