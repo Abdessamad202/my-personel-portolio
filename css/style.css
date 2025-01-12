@@ -375,9 +375,8 @@ a {
   text-align: center;
 }
 .card:hover{
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-  background-color: #2e2e2e;
+  background-color: #2e2e2e !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 .card img {
   height: 50px;
