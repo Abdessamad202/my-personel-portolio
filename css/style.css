@@ -22,8 +22,15 @@ p {
 body {
   background-color: var(--background-color);
 }
-.container {
-  overflow: hidden;
+@media (min-width: 1078px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 1078px) {
+  .container {
+    overflow: hidden;
+  }
 }
 /* Utility Classes */
 .mt-100 {
@@ -343,7 +350,7 @@ a {
 /* Mobile (between 480px and 768px) */
 @media (max-width: 768px) {
   .header {
-    text-align: center;  /* Center align text for mobile */
+    text-align: center;
     font-size: 30px;  /* Adjust font size for mobile */
     margin-top: 30px;  /* Adjust margin */
   }
