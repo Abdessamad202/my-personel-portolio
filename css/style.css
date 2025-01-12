@@ -37,7 +37,7 @@ body {
   margin-top: 100px;
 }
 .mb-100 {
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
 }
 .mt-50 {
   margin-top: 50px;
@@ -336,6 +336,7 @@ a {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  padding: 20px;
   margin-top: 50px;
 }
 
@@ -392,4 +393,48 @@ a {
 .card p {
   font-size: 14px;
   color: #a8a8a8;
+}
+
+/* form styling */
+.contact-form {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.contact-form label {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid #a259ff;
+  border: none;
+
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a259ff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #8a3fff;
 }
