@@ -370,7 +370,7 @@ a {
   background-color: #1e1e1e;
   border: none;
   border-radius: 12px;
-  padding: 20px;
+  padding: 20px 0;
   margin: 20px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -420,25 +420,24 @@ a {
 
 }
 .contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #3a3a3a;
-  color: #ffffff;
-}
-
+.contact-form textarea,
 .contact-form button {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #a259ff;
   color: #ffffff;
-  font-size: 16px;
+}
+.contact-form input,
+.contact-form textarea{
+  background-color: #3a3a3a;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
   cursor: pointer;
+  font-size: 16px;
+  background-color: #a259ff;
 }
 .contact-form button:hover {
   background-color: #8a3fff;
